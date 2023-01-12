@@ -1,0 +1,104 @@
+#include <iostream>
+
+int main()  
+{  
+ char ch='A'; 
+ int size=5;
+ int lt=size;
+ 
+    int i, j, k, m;    
+    std::cout<<"hello this is your pattern \n ";
+    for(i=1;i<=size;i++)    
+    {  if (i<=(size/2)+1)  
+        {std::cout<<"\n";    
+        ch ='A';
+        for(j=(size/2)+1;j>=i;j--)    
+            std::cout<<" ";    
+        for(k=1;k<=i;k++)    // printing charcters
+            std::cout<<ch++;    
+                
+        for(m=1;m<i;m++)    
+            std::cout<<ch++;    
+        }else if(i==size)
+        {
+        for(j=1;j<(size/2)+1;j++)
+                {std::cout<<"";}
+        std::cout<<"\nA";
+            
+        }else
+        if (i>(size/2)+1)
+        {std::cout<<"\n";
+         ch ='C';
+         for(j=(size/2)+1;j<=i;j++)    
+             std::cout<<" "; 
+             
+         for(k=lt+(size/2);k>i;k--)    
+             {std::cout<<ch--; }
+             lt--;
+                
+         
+         
+    }
+    }
+}
+
+///////////////////////////////////////////////////////////////////
+
+
+#include <iostream>
+
+int main() {
+    char str[]="ysthe the graph";
+    int c;
+    int count=0;
+    for(int i=0;str[i]!='\0';i++)
+        { if(str[i]==' ')
+            if(str[i+1]=='t')
+             if (str[i+2]=='h')
+                if(str[i+3]=='e')
+                  { count+=3;
+                      for(int j =i;str[j]!='\0';j++)
+                     {str[j]=str[j+4];}
+                      
+                  }
+                  c=i;
+        }
+    for(int m=0;m<=c;m++)
+    { std::cout<<str[m];
+    }
+
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////
+#include <iostream>
+#include <bits/stdc++.h>
+
+int main()  
+{  int arr[10];
+   for (int i = 0; i < n ; i++)
+       {
+           std::cin>>arr[i];
+       }
+   int range1=0;
+   int a=100;
+   for (int i = 0; i < n ; i++)
+       {
+           if (a>=arr[i])
+           { a=arr[i];
+               range1=i;
+           }
+       } //min element
+    a=0
+    int range2=0;
+    for (int i = 0; i < n ; i++)
+       {
+           if (a=<arr[i])
+           { a=arr[i];
+               range2=i;
+           }
+       }
+       
+       
+       
+}
